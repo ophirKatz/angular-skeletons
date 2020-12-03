@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-signalr-two-way'`, () => {
+  it(`should have as title 'angular-http-signalr'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-signalr-two-way');
+    expect(app.title).toEqual('angular-http-signalr');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('angular-signalr-two-way app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('angular-http-signalr app is running!');
   });
 });
